@@ -8,7 +8,8 @@ function _drawTodos() {
   let todos = ProxyState.todos
   todos.forEach(t => template += t.Template)
   document.getElementById("todoId").innerHTML =/*html*/`<p>Current Todos: ${ProxyState.todos.length}</p>` + template
-  // gsap.to("#logoId", { duration: 2, x: 200, ease: "bounce", rotation: 10800, rotationX: 360 });
+  gsap.to("#logoId", { duration: 2, x: 200, ease: "bounce", rotation: 10800, rotationX: 360 });
+
 }
 
 export default class TodoController {
