@@ -1,8 +1,9 @@
 export default class Todo {
-  constructor({ _id, description, completed }) {
+  constructor({ _id, description, completed, checked }) {
     this._id = _id;
     this.description = description
     this.completed = completed
+    this.checked = checked
   }
 
   get Template() {
@@ -12,7 +13,7 @@ export default class Todo {
           <button class="close text-danger" onclick="app.todoController.removeTodo('${this._id}')">&times</button>
           <h5>${this.description}</h5>
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="('${this._id}')">
+            <input type="checkbox" class="custom-control-input" id="('${this._id}')" value="checkedValue" ('${this.checked}')>
             <label class="custom-control-label" for="('${this._id}')" onclick="app.todoController.toggleTodoStatus('${this._id}')">Mark Done</label>
           </div>
         </div>

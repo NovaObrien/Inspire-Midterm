@@ -16,7 +16,7 @@ export default class Weather {
     return /*html*/ `
     <div class="col">
       <p>${this.city}</p>
-      <p>${this.kelvin}</p>
+      <p>K ${this.kelvin}</p>
     </div>
     `
   }

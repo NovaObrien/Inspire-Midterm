@@ -1,4 +1,5 @@
 import Image from "./models/Image.js"
+import Quote from "./Models/Quote.js"
 import Todo from "./Models/Todo.js"
 import Weather from "./Models/Weather.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
@@ -13,6 +14,10 @@ class AppState extends EventEmitter {
 
   /** @type {Image} */
   image = null
+
+  /** @type {Quote} */
+
+  quote = null
 }
 
 export const ProxyState = new Proxy(new AppState(), {
