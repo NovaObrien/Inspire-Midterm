@@ -44,7 +44,7 @@ The positioning of elements on the page is not the absolute most crucial thing f
 ## The Back-End (API)
 
 In this project you will be expected to communicate with the following endpoints. With the exception of `todos` all of these endpoints will only respond to `GET` requests. `Axios` instances have already been created in each of the corresponding services. It will be up to you to look at the data from these endpoints to determine your `models` for dealing with the data. 
-
+ 
 - `baseURL = https://bcw-sandbox.herokuapp.com/api/`
     - `weather`
     - `quotes`

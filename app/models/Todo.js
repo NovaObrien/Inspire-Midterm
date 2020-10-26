@@ -7,13 +7,22 @@ export default class Todo {
 
   get Template() {
     return /*html*/ `
-      <div class="row m-2 shadow-lg">
-        <div class="col">
-        <button class="close text-danger" onclick="app.todoController.removeTodo('${this._id}')">&times</button>
-        <h2>${this.description}</h2>
-        <button class="btn btn-success btn-sm" onclick="app.todoController.toggleTodoStatus('${this._id}')">Done</button>
+      <div class="row m-2">
+        <div class="col-12">
+          <button class="close text-danger" onclick="app.todoController.removeTodo('${this._id}')">&times</button>
+          <h5>${this.description}</h5>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="('${this._id}')">
+            <label class="custom-control-label" for="('${this._id}')" onclick="app.todoController.toggleTodoStatus('${this._id}')">Mark Done</label>
+          </div>
         </div>
       </div>
     `
   }
+  // <div class="custom-control custom-checkbox">
+  //           <input type="checkbox" class="custom-control-input" id="('${this._id}')">
+  //           <label class="custom-control-label" for="('${this._id}')">Mark Done</label>
+  //         </div>
+
+  // <button class="btn btn-success btn-sm" onclick="app.todoController.toggleTodoStatus('${this._id}')"></button>
 }
