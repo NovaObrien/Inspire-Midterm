@@ -1,5 +1,5 @@
 import { ProxyState } from "../AppState.js";
-import Todo from "../Models/Todo.js";
+import Todo from "../models/Todo.js";
 import todoService from "../Services/TodoService.js";
 
 //TODO Create the draw function

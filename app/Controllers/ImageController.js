@@ -8,8 +8,7 @@ function _drawImage() {
   let template = ProxyState.image.imageUrl
   console.log(ProxyState.image.imageUrl)
 
-  // document.getElementById("testId").style.backgroundImage = "url"
-  document.body.style.backgroundImage = "url(https://splashbase.s3.amazonaws.com/unsplash/large/K6ndgx)";
+  document.getElementById("testId").style.backgroundImage = "url()" + template
 
 }
 export default class ImageController {

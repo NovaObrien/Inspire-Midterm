@@ -7,6 +7,8 @@ class ImageService {
   async getImageApi() {
     let res = await api.get("images")
     ProxyState.image = new Image(res.data)
+    // template += 'col' + (ProxyState.image.imageUrl)
+    // document.body.style.backgroundImage = template
   }
 }
 
